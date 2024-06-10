@@ -1,0 +1,8 @@
+[ 2024-06-10 13:53:40,053 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2024-06-10 13:54:04,895 ] 35 root - INFO - Starting data ingestion
+[ 2024-06-10 13:54:04,928 ] 33 root - INFO - Exporting data from mongodb to feature store
+[ 2024-06-10 13:54:04,928 ] 18 root - INFO - Retrieved MongoDB URL: mongodb+srv://bunnykatiyar986:1234@cluster0.ewsuymh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+[ 2024-06-10 14:01:33,262 ] 35 root - INFO - Starting data ingestion
+[ 2024-06-10 14:01:33,433 ] 33 root - INFO - Exporting data from mongodb to feature store
+[ 2024-06-10 14:02:24,566 ] 35 root - INFO - Starting data ingestion
+[ 2024-06-10 14:02:24,654 ] 33 root - INFO - Exporting data from mongodb to feature store

@@ -1,0 +1,22 @@
+[ 2024-04-22 16:04:07,568 ] 32 root - INFO - Starting data ingestion
+[ 2024-04-22 16:04:07,582 ] 33 root - INFO - Exporting data from mongodb to feature store
+[ 2024-04-22 16:04:07,582 ] 18 root - INFO - Retrieved MongoDB URL: mongodb+srv://bunnykatiyar986:1234@cluster0.ewsuymh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+[ 2024-04-22 16:04:23,347 ] 61 root - INFO - Performed train test split on the dataframe
+[ 2024-04-22 16:04:23,349 ] 63 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-04-22 16:04:23,349 ] 71 root - INFO - Exporting train and test file path.
+[ 2024-04-22 16:04:23,988 ] 81 root - INFO - Exported train and test file path.
+[ 2024-04-22 16:04:24,162 ] 38 root - INFO - Data ingestion completed and artifact: DataIngestionArtifact(trained_file_path='artifact/04_22_2024_16_04_06/data_ingestion/ingested/train.csv', test_file_path='artifact/04_22_2024_16_04_06/data_ingestion/ingested/test.csv')
+[ 2024-04-22 16:04:24,440 ] 35 root - INFO - Required number of columns: 164
+[ 2024-04-22 16:04:24,440 ] 36 root - INFO - Data frame has columns: 164
+[ 2024-04-22 16:04:24,440 ] 35 root - INFO - Required number of columns: 164
+[ 2024-04-22 16:04:24,440 ] 36 root - INFO - Data frame has columns: 164
+[ 2024-04-22 16:04:24,441 ] 57 root - INFO - Missing numerical columns: [[]]
+[ 2024-04-22 16:04:24,441 ] 57 root - INFO - Missing numerical columns: [[]]
+[ 2024-04-22 16:04:25,956 ] 148 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=False, valid_train_file_path='artifact/04_22_2024_16_04_06/data_ingestion/ingested/train.csv', valid_test_file_path='artifact/04_22_2024_16_04_06/data_ingestion/ingested/test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='artifact/04_22_2024_16_04_06/data_validation/drift_report/report.yaml')
+[ 2024-04-22 16:04:32,363 ] 70 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-04-22 16:04:32,368 ] 74 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-04-22 16:04:32,368 ] 137 root - INFO - Data transformation artifact: DataTransformationArtifact(transformed_object_file_path='artifact/04_22_2024_16_04_06/data_transformation/transformed_object/preprocessing.pkl', transformed_train_file_path='artifact/04_22_2024_16_04_06/data_transformation/transformed/train.npy', transformed_test_file_path='artifact/04_22_2024_16_04_06/data_transformation/transformed/test.npy')
+[ 2024-04-22 16:04:45,610 ] 70 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-04-22 16:04:45,613 ] 74 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-04-22 16:04:45,613 ] 90 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='artifact/04_22_2024_16_04_06/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=1.0, precision_score=1.0, recall_score=1.0), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9839409722222222, precision_score=0.9924120822997228, recall_score=0.9756132549132118))
+[ 2024-04-22 16:04:45,938 ] 75 root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=True, improved_accuracy=None, best_model_path=None, trained_model_path='artifact/04_22_2024_16_04_06/model_trainer/trained_model/model.pkl', train_model_metric_artifact=ClassificationMetricArtifact(f1_score=0.9839409722222222, precision_score=0.9924120822997228, recall_score=0.9756132549132118), best_model_metric_artifact=None)
